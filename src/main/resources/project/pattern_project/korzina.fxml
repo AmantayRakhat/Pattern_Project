@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.pattern_project.KorzinaController">
+   <children>
+      <Text layoutX="164.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Корзина">
+         <font>
+            <Font name="Arial" size="34.0" />
+         </font>
+      </Text>
+      <VBox layoutX="16.0" layoutY="73.0" prefHeight="350.0" prefWidth="450.0">
+         <children>
+            <VBox fx:id="korzinaVbox" prefHeight="284.0" prefWidth="450.0" spacing="10.0" />
+            <AnchorPane prefHeight="15.0" prefWidth="450.0">
+               <children>
+                  <Text layoutX="143.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Итог:">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <HBox layoutX="210.0" layoutY="6.0" prefHeight="31.0" prefWidth="178.0">
+                     <children>
+                        <Text fx:id="itog" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="181.19854736328125">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="тг" wrappingWidth="19.83831775188446">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="225.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

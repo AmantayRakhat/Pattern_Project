@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.gleidson28.GNAvatarView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fitToWidth="true" hbarPolicy="NEVER" minHeight="500.0" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.pattern_project.HomePageController">
+   <content>
+      <BorderPane prefHeight="802.0" prefWidth="686.0">
+         <left>
+            <AnchorPane prefHeight="719.0" prefWidth="163.0" style="-fx-border-color: #C0C0C0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="electronika" layoutX="-2.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Электроника" />
+                  <Button fx:id="knigi" accessibleRole="TEXT" layoutX="-2.0" layoutY="46.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Книги" />
+                  <Button fx:id="krasota" layoutX="-2.0" layoutY="92.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Красота и здоровье" />
+                  <Button fx:id="producty" layoutX="-2.0" layoutY="138.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Продукты питания" />
+                  <Button fx:id="zooTovary" layoutX="-2.0" layoutY="184.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Зоотовары" />
+                  <Button fx:id="posuda" layoutX="-2.0" layoutY="230.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Посуда" />
+                  <Button fx:id="TovaryDliaDoma" layoutX="-2.0" layoutY="276.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Товары для дома" />
+                  <Button fx:id="DetskiMir" layoutX="-2.0" layoutY="322.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Детский мир" />
+                  <Button fx:id="KansTovary" layoutX="-2.0" layoutY="368.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Канцтовары" />
+                  <Button fx:id="Bytovaia" layoutX="-2.0" layoutY="412.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Бытовая техника" />
+                  <Button fx:id="AvtoTovaty" layoutX="-2.0" layoutY="456.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Автотовары" />
+                  <Button fx:id="odezhda" layoutX="-2.0" layoutY="499.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Одежда и аксессуары" />
+                  <Button fx:id="sport" layoutX="-2.0" layoutY="545.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" text="Спорт и отдых" />
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <BorderPane prefHeight="83.0" prefWidth="684.0" style="-fx-background-color: #0a78d6;" BorderPane.alignment="CENTER">
+               <right>
+                  <AnchorPane prefHeight="83.0" prefWidth="222.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <MenuButton fx:id="m" layoutX="-2.0" layoutY="21.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #0a78d6;" text="Войти" textFill="WHITE">
+                           <items>
+                              <MenuItem fx:id="v1" mnemonicParsing="false" text="Войти" />
+                              <MenuItem fx:id="v2" mnemonicParsing="false" text="Зарегистрироваться" />
+                           </items>
+                           <graphic>
+                              <GNAvatarView prefHeight="36.0" prefWidth="36.0" strokeWidth="0.0" type="CIRCLE">
+                                 <image>
+                                    <Image url="@images/avatar.jpg" />
+                                 </image></GNAvatarView>
+                           </graphic>
+                        </MenuButton>
+                        <Pane layoutX="125.0" layoutY="24.0" prefHeight="42.0" prefWidth="95.0">
+                           <children>
+                              <Text fx:id="korzinka" fill="WHITE" layoutX="35.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Корзинка" />
+                              <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="-3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/korzinka1.png" />
+                                 </image></ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </right>
+               <center>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="83.0" prefWidth="279.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="naytitext" layoutX="24.0" layoutY="29.0" prefHeight="26.0" prefWidth="218.0" promptText="более 100000 товаров" style="-fx-background-color: white;" />
+                        <Button fx:id="nayti" layoutX="242.0" layoutY="28.0" minWidth="50.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="54.0" style="-fx-background-color: #FFCC00;" text="найти" />
+                     </children>
+                  </AnchorPane>
+               </center>
+               <left>
+                  <HBox prefHeight="83.0" prefWidth="141.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="70.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" stroke="WHITE" strokeType="INSIDE" width="30.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" stroke="WHITE" strokeType="INSIDE" width="30.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" stroke="WHITE" strokeType="INSIDE" width="30.0" />
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Каталог" />
+                           </children>
+                        </VBox>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="VenomHome" fill="WHITE" layoutX="21.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venom" wrappingWidth="66.6796875">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="20.0" />
+                     </padding>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </HBox>
+               </left>
+            </BorderPane>
+         </top>
+         <center>
+            <BorderPane fx:id="borderHbox" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <AnchorPane prefHeight="346.0" prefWidth="698.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="#e17902" layoutX="55.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venom.kz — ведущий казахстанский интернет-магазин c доставкой по Казахстану">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#3445ff" layoutX="164.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Помощь" />
+                        <Text fill="#3445ff" layoutX="71.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="О компании" />
+                        <Text fill="#3445ff" layoutX="235.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Контакты" />
+                        <Text layoutX="65.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venom — это качественный ассортимент и отличное обслуживание!">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="71.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• курьерская доставка в 19 городах Казахстана, а также 71 пункт выдачи по всему Казахстану;">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="71.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• оплата при получении в пунктах выдачи заказов;">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="71.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• возврат в течение 14 дней;">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="71.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• регулярные акции и скидки.">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <top>
+                  <BorderPane prefHeight="95.0" prefWidth="698.0" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </content>
+</ScrollPane>

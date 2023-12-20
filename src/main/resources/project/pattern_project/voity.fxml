@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="500.0" prefWidth="700.0" spacing="10.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.pattern_project.VoityController">
+   <children>
+      <HBox prefHeight="4.0" prefWidth="330.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="108.0" text="Вход" />
+         </children>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="12.0" prefWidth="330.0">
+         <children>
+            <TextField fx:id="name" promptText="Имя" />
+         </children>
+      </HBox>
+      <HBox layoutX="210.0" layoutY="249.0" prefHeight="0.0" prefWidth="330.0">
+         <children>
+            <PasswordField fx:id="pass" promptText="Пароль" />
+         </children>
+      </HBox>
+      <HBox layoutX="190.0" layoutY="310.0" prefHeight="14.0" prefWidth="330.0">
+         <children>
+            <Button fx:id="voity" mnemonicParsing="false" text="Войти" />
+         </children>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="180.0" top="50.0" />
+   </padding>
+</VBox>

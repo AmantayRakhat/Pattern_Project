@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.pattern_project.TVController">
+   <children>
+      <Text fill="#c38b00" layoutX="125.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Монитор Zowie XL2411K">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="156.0" fitWidth="159.0" layoutX="14.0" layoutY="65.0">
+         <image>
+            <Image url="@../../../../java/images/2023-12-17%2014.16.39.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="23.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В процессе проектирования прочность не была принесена в жертву эстетике. ЖК-панель лучше защищена рамкой, обеспечивающей дополнительную устойчивость по бокам. Это особенно полезно при транспортировке мониторов на мероприятия LAN или BYOC." wrappingWidth="300.0" />
+      <AnchorPane layoutX="296.0" layoutY="62.0" prefHeight="163.0" prefWidth="194.0" style="-fx-border-color: #C0C0C0;">
+         <children>
+            <Text layoutX="61.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В корзину">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена:" wrappingWidth="34.980464935302734" />
+            <Button layoutX="53.0" layoutY="119.0" mnemonicParsing="false" style="-fx-background-color: #FFCC00;" text="Добавить в корзину" />
+            <Text fill="#d90505" layoutX="53.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="131 600 ₸" wrappingWidth="56.4326171875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество:" />
+            <MenuButton layoutX="101.0" layoutY="63.0" mnemonicParsing="false" text="1">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="1" />
+                  <MenuItem mnemonicParsing="false" text="2" />
+                  <MenuItem mnemonicParsing="false" text="3" />
+                  <MenuItem mnemonicParsing="false" text="4" />
+                  <MenuItem mnemonicParsing="false" text="5" />
+               </items>
+            </MenuButton>
+         </children>
+      </AnchorPane>
+      <Text layoutX="23.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Эстетичный внешний вид без ущерба для износоустойчивости">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/photo_5472160670570107424_x.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

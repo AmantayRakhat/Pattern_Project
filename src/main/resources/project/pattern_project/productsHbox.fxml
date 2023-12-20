@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="500.0" prefWidth="459.0" spacing="5.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="719.0" prefWidth="160.0" spacing="5.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane prefHeight="186.0" prefWidth="160.0" style="-fx-border-color: #C0C0C0;">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="100.0" layoutX="30.0" layoutY="14.0">
+                     <image>
+                        <Image url="@images/catologimage/photo_5474412470383794094_x.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#3445ff" layoutX="21.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Горячий шоколад" textAlignment="JUSTIFY" wrappingWidth="118.0" />
+                  <Text fill="#d90505" layoutX="114.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 3 818 ₸">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="719.0" prefWidth="160.0" spacing="5.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane prefHeight="186.0" prefWidth="160.0" style="-fx-border-color: #C0C0C0;">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="100.0" layoutX="31.0" layoutY="14.0">
+                     <image>
+                        <Image url="@images/catologimage/photo_5474412470383794095_x.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#3445ff" layoutX="38.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ягоды Годжи" />
+                  <Text fill="#d90505" layoutX="110.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 117 ₸">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="719.0" prefWidth="160.0" spacing="5.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane prefHeight="186.0" prefWidth="160.0" style="-fx-border-color: #C0C0C0;">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="100.0" layoutX="30.0" layoutY="14.0">
+                     <image>
+                        <Image url="@images/catologimage/photo_5474412470383794099_x.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#3445ff" layoutX="15.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Шоколад молочный " />
+                  <Text fill="#d90505" layoutX="102.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 680 ₸">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+</HBox>
