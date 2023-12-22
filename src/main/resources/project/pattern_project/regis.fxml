@@ -27,7 +27,7 @@
       </HBox>
       <HBox prefHeight="14.0" prefWidth="330.0">
          <children>
-            <TextField fx:id="money" promptText="Сколько денег?" />
+            <TextField fx:id="money" promptText="Сколько денег хочешь внести?" />
          </children>
       </HBox>
       <HBox prefHeight="14.0" prefWidth="330.0">

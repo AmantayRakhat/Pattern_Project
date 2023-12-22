@@ -60,7 +60,23 @@ public class CurrentUser {
         }
     }
 
+    public static void updateCash(String name, String money){
+        Connection conn = DBConnection.getConnection();
+        try {
+            Statement p = conn.createStatement();
+            String q1 = "UPDATE userdata SET cash = '" + (CurrentUser.getCurrentUser().getCash() + Double.parseDouble(money)) + "" +
+                    "' WHERE name =  '" + name +"'";
+
+            p.executeUpdate(q1);
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+
     public static void logout() {
         currentUser = null;
     }
+
+
 }

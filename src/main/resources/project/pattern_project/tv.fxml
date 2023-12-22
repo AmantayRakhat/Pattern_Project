@@ -30,20 +30,20 @@
                </font>
             </Text>
             <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена:" wrappingWidth="34.980464935302734" />
-            <Button layoutX="53.0" layoutY="119.0" mnemonicParsing="false" style="-fx-background-color: #FFCC00;" text="Добавить в корзину" />
+            <Button fx:id="korzinka" layoutX="53.0" layoutY="119.0" mnemonicParsing="false" style="-fx-background-color: #FFCC00;" text="Добавить в корзину" />
             <Text fill="#d90505" layoutX="53.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="131 600 ₸" wrappingWidth="56.4326171875">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Text>
             <Text layoutX="14.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество:" />
-            <MenuButton layoutX="101.0" layoutY="63.0" mnemonicParsing="false" text="1">
+            <MenuButton fx:id="count" layoutX="101.0" layoutY="63.0" mnemonicParsing="false" text="1">
                <items>
-                  <MenuItem mnemonicParsing="false" text="1" />
-                  <MenuItem mnemonicParsing="false" text="2" />
-                  <MenuItem mnemonicParsing="false" text="3" />
-                  <MenuItem mnemonicParsing="false" text="4" />
-                  <MenuItem mnemonicParsing="false" text="5" />
+                  <MenuItem fx:id="one" mnemonicParsing="false" text="1" />
+                  <MenuItem fx:id="two" mnemonicParsing="false" text="2" />
+                  <MenuItem fx:id="three" mnemonicParsing="false" text="3" />
+                  <MenuItem fx:id="four" mnemonicParsing="false" text="4" />
+                  <MenuItem fx:id="five" mnemonicParsing="false" text="5" />
                </items>
             </MenuButton>
          </children>

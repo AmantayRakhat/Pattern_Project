@@ -3,9 +3,17 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>1553</IntrospectionStateNumber>
+      <Grants>1||-9223372036854775808|c|G
+1||10|c|G
+1||10|C|G
+1||10|T|G
+4||-9223372036854775808|c|G
+4||10|c|G
+4||10|C|G
+4||10|T|G</Grants>
+      <IntrospectionStateNumber>1560</IntrospectionStateNumber>
       <ServerVersion>16.0</ServerVersion>
-      <StartupTime>1702921328</StartupTime>
+      <StartupTime>1703181978</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -801,7 +809,7 @@ false Zulu
 14697||10|C|G
 14697||-9223372036854775808|U|G
 14697||10|U|G</Grants>
-      <IntrospectionStateNumber>1553</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1560</IntrospectionStateNumber>
       <ObjectId>67101</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4272,8 +4280,8 @@ false Zulu
     <schema id="275" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1553</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2023-12-20.12:53:09</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>1560</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2023-12-21.18:23:27</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4304,7 +4312,7 @@ false Zulu
     </sequence>
     <table id="279" parent="275" name="cart">
       <ObjectId>67232</ObjectId>
-      <StateNumber>1552</StateNumber>
+      <StateNumber>1559</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4374,7 +4382,7 @@ product_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>67235</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1552</StateNumber>
+      <StateNumber>1559</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>

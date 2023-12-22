@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
@@ -42,18 +43,29 @@ public class AppleWatchController {
 
     @FXML
     private MenuItem two;
-    static int n=1;
+     int n=1;
     @FXML
     void initialize() {
-        if(count.isPressed()){
-            one.setOnAction(e->n=1);
-            two.setOnAction(e->n=2);
-            three.setOnAction(e->n=3);
-            four.setOnAction(e->n=4);
-            five.setOnAction(e->n=5);
-        }
+            one.setOnAction(e->{
+                n=1;
+                count.setText(n+"");
+            });two.setOnAction(e->{
+                n=2;
+                count.setText(n+"");
+            });three.setOnAction(e->{
+                n=3;
+                count.setText(n+"");
+            });four.setOnAction(e->{
+                n=4;
+                count.setText(n+"");
+            });five.setOnAction(e->{
+                n=5;
+                count.setText(n+"");
+            });
+
         korzinka.setOnMousePressed(e->{
             if(guestoruser.num==1){
+                System.out.println(n);
                 insertInCart(n);
             }
             else{
@@ -71,12 +83,25 @@ public class AppleWatchController {
             PreparedStatement p=conn.prepareStatement(query);
             p.setInt(1, CurrentUser.getCurrentUser().getId());
             p.setInt(2, 3);
-            p.setInt(3, n);
+            p.setInt(3, cnt);
             p.executeUpdate();
 
         } catch (Exception e) {
-            e.printStackTrace();
+            update(cnt);
         }
+    }
+
+     void update(int cnt) {
+         Connection conn = DBConnection.getConnection();
+         try {
+             Statement p = conn.createStatement();
+             String q1 = "UPDATE cart SET quantity = '" + cnt +""+
+                     "' WHERE user_id =  '" + CurrentUser.getCurrentUser().getId() +"' and product_id='"+ 3 +"'";
+             p.executeUpdate(q1);
+
+         }catch (Exception e){
+             System.out.println(e.getMessage());
+         }
     }
 
 }

@@ -71,30 +71,13 @@ public class RegisController {
     }
     int code;
     void gmailsendmessage(){
-        final String username = "rakhatjavafx@gmail.com";
-        final String password = "xyfjwompmoxjynfz";
-
-        Properties prop = new Properties();
-        prop.put("mail.smtp.ssl.protocols", "TLSv1.2");
-        prop.put("mail.smtp.ssl.trust", "smtp.gmail.com");
-        prop.put("mail.smtp.host", "smtp.gmail.com");
-        prop.put("mail.smtp.port", "587");
-        prop.put("mail.smtp.auth", "true");
-        prop.put("mail.smtp.starttls.enable", "true"); //TLS
-        Session session = Session.getInstance(prop,
-                new javax.mail.Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, password);
-                    }
-                });
+        Message message=Gmail.gmailsend();
         try {
-            Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("rakhatjavafx@gmail.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
                     InternetAddress.parse(email.getText())
             );
-//            message.setSubject("CODE!!!");
+            message.setSubject("Venom Online Shop");
             code = (int) (Math.random()*900+100);
             message.setText(String.valueOf(code));
             Transport.send(message);

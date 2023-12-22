@@ -152,20 +152,20 @@
                     System.out.println(e.getMessage());
                 }
             });
-
             v1.setOnAction(ee->{
                 try {
                     borderHbox.getChildren().clear();
-                    FXMLLoader fxmlLoader = new FXMLLoader(RegisController.class.getResource("voity.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(VoityController.class.getResource("voity.fxml"));
                     borderHbox.setCenter(fxmlLoader.load());
                 }catch (Exception e){
                     System.out.println(e.getMessage());
                 }
             });
+
             v2.setOnAction(ee->{
                 try {
                     borderHbox.getChildren().clear();
-                    FXMLLoader fxmlLoader = new FXMLLoader(VoityController.class.getResource("regis.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(RegisController.class.getResource("regis.fxml"));
                     borderHbox.setCenter(fxmlLoader.load());
                 }catch (Exception e){
                     System.out.println(e.getMessage());

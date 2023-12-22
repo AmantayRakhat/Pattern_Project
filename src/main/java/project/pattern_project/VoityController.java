@@ -1,10 +1,7 @@
 package project.pattern_project;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.net.URL;
-import java.sql.*;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -52,21 +49,20 @@ public class VoityController {
             alert.setContentText("Не удалось войти!");
             alert.show();
         } else {
-            openNewScene("homePageVoity.fxml");
+            openNewScene();
         }
-
-
     }
 
-    void openNewScene(String window) {
-        voity.getScene().getWindow().hide();
-        FXMLLoader fxmlLoader = new FXMLLoader(HomePageVoityController.class.getResource(window));
+    void openNewScene() {
+        FXMLLoader fxmlLoader1=null;
         try {
-            fxmlLoader.load();
+            voity.getScene().getWindow().hide();
+            fxmlLoader1 = new FXMLLoader(HomePageVoityController.class.getResource("homePageVoity.fxml"));
+            fxmlLoader1.load();
         } catch (IOException ex) {
             System.out.println();
         }
-        Parent root = fxmlLoader.getRoot();
+        Parent root = fxmlLoader1.getRoot();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.show();

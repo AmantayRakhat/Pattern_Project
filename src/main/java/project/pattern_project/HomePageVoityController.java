@@ -80,6 +80,9 @@ public class HomePageVoityController {
 
     @FXML
     private MenuItem v;
+    @FXML
+
+    private MenuItem v1;
 
     @FXML
     private Button zooTovary;
@@ -160,6 +163,26 @@ public class HomePageVoityController {
             stage.setScene(new Scene(root));
             stage.show();
         });
+        v1.setOnAction(actionEvent -> {
+            try {
+                borderHbox.getChildren().clear();
+                FXMLLoader fxmlLoader = new FXMLLoader(MyPageController.class.getResource("myPage.fxml"));
+                borderHbox.setCenter(fxmlLoader.load());
+            }catch (Exception e){
+                System.out.println(e.getMessage());
+            }
+        });
+        korzinka.setOnMousePressed(e->{
+            try {
+                borderHbox.getChildren().clear();
+                Cart.rs=null;
+                FXMLLoader fxmlLoader = new FXMLLoader(KorzinaController.class.getResource("korzina.fxml"));
+                borderHbox.setCenter(fxmlLoader.load());
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
     }
 
 }

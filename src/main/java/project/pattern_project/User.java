@@ -32,6 +32,10 @@ class User {
         return password;
     }
 
+    public void setCash(double cash) {
+        this.cash = cash;
+    }
+
     public User(int id, String name, String email, String password, Double cash, String address) {
         this.id=id;
         this.name=name;

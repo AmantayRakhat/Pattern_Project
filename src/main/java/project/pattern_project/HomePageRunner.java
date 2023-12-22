@@ -16,7 +16,6 @@ public class HomePageRunner extends Application {
         stage.setScene(new Scene(fxmlLoader.load(), 700, 500));
         stage.show();
     }
-
     public static void main(String[] args) {
 
         launch();
